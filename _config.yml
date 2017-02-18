@@ -1,0 +1,4 @@
+markdown: redcarpet
+baseulr: /jeankee-starter-kit
+exclude: ["node_modules", "gulpfile.js", "package.json"]
+permalink: pretty
