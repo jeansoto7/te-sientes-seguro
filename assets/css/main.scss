@@ -22,10 +22,15 @@
 // @import "2-modules/flex-video";
 
 // 3 - Sections
-// @import "3-sections/header";
+@import "3-sections/header";
+@import "3-sections/noticias";
+@import "3-sections/historias";
+@import "3-sections/cuentanos";
+@import "3-sections/contacto";
+@import "3-sections/footer";
 
 // 4 - layouts
-@import "4-layouts/home";
+// @import "4-layouts/home";
 
 // Font Awesome
 @import "0-tools/font-awesome/font-awesome";

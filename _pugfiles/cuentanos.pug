@@ -1,0 +1,25 @@
+.cuentanos
+  .title-content
+    h1 Cuentanos tu Historia
+    hr
+
+  .form-fill-out
+    #mc_form
+      form(method='POST', action='https://formspree.io/tesientesseguro@gmail.com')
+        .form-display
+          .row-1
+            .mc-field-group.group-name
+              label Nombre...
+              input(type='text', name='name')
+            .mc-field-group.group-subject
+              label Asunto...
+              input(type='text', name='subject')
+            .mc-field-group.group-email
+              label Email...
+              input(type='email', name='_replyto')
+          .row-2
+            .mc-field-group.group-message
+              label Tu Historia...
+              input(type='text', name='subject')
+          .group-submit
+            input.submit-button(type='submit', value='Enviar')

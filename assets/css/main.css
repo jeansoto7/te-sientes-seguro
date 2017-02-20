@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,400i");
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,700");
 html {
   box-sizing: border-box; }
 
@@ -266,7 +266,7 @@ input[type="button"] {
   height: 3em;
   padding: 0 1.7em;
   text-align: center;
-  font-size: 0.625em;
+  font-size: 0.7em;
   font-weight: 400;
   letter-spacing: 0.14286em;
   text-transform: uppercase;
@@ -274,9 +274,9 @@ input[type="button"] {
   white-space: nowrap;
   cursor: pointer;
   box-sizing: border-box;
-  transition: all 0.3s ease-in-out;
-  background-color: rgba(51, 51, 51, 0.2);
-  border: 1px solid #bbb;
+  transition: all 0.5s ease-in-out;
+  background-color: transparent;
+  border: 1px solid black;
   position: relative;
   z-index: 8; }
   .button:hover, .button:active, .button:focus,
@@ -342,8 +342,213 @@ body {
 .transparent {
   opacity: 0; }
 
-.home-wrap {
-  height: 2000px; }
+img {
+  vertical-align: bottom; }
+
+.title-content h1 {
+  font-weight: 400;
+  text-align: center; }
+
+.title-content hr {
+  width: 10%;
+  margin: 0 auto 0.7em; }
+
+.blackwhite-hover {
+  transition: all 0.3s ease-in-out; }
+  .blackwhite-hover:hover {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-filter: gray;
+            filter: gray; }
+
+.ver-mas {
+  min-width: 15%;
+  margin: 1.5em 0 0; }
+
+.header-position {
+  position: relative;
+  background-position: center top;
+  background-size: cover; }
+  .header-position a, .header-position h1, .header-position h2, .header-position .fa {
+    color: white; }
+  .header-position .nav, .header-position ul, .header-position .social-media {
+    display: -ms-flexbox;
+    display: flex; }
+  .header-position .nav {
+    position: fixed;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    width: 98%;
+    margin-top: 1em; }
+  .header-position .logo {
+    width: 20%; }
+  .header-position ul {
+    width: 70%;
+    -ms-flex-pack: end;
+        justify-content: flex-end; }
+    .header-position ul a:hover {
+      color: black; }
+  .header-position li {
+    margin-right: 4em;
+    font-size: 1.1em; }
+  .header-position .active-nav {
+    border-bottom: 2px solid white; }
+    .header-position .active-nav:hover {
+      border-bottom: 2px solid black; }
+  .header-position .social-media {
+    width: 10%;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+    -ms-flex-align: center;
+        align-items: center; }
+  .header-position .fa {
+    margin-right: 1.5em; }
+    .header-position .fa:hover {
+      color: black; }
+  .header-position .header-text {
+    text-align: center;
+    padding: 10% 0 7%; }
+    .header-position .header-text h1 {
+      font-size: 3em;
+      text-transform: uppercase;
+      letter-spacing: 0.7em;
+      font-weight: 400; }
+    .header-position .header-text h2 {
+      margin: 1em auto 0;
+      width: 45%;
+      font-size: 1.8em;
+      font-weight: 200; }
+
+.introduction {
+  text-align: center;
+  padding: 2em 2em;
+  background: #e8e8e8; }
+  .introduction button {
+    margin-top: 2em; }
+  .introduction a {
+    display: inline-block; }
+
+.noticias {
+  text-align: center;
+  padding: 2em 0; }
+  .noticias .noticias-articles {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 90%;
+    margin: auto; }
+  .noticias .news-box {
+    width: 33.3%;
+    padding: 0.5em 2em;
+    overflow: hidden; }
+    .noticias .news-box img {
+      width: 100%;
+      height: auto; }
+    .noticias .news-box h3 {
+      margin-top: 0.5em; }
+
+.tienda {
+  background: #e8e8e8; }
+
+.historias {
+  background: #e8e8e8;
+  padding: 2em; }
+  .historias .cuento {
+    padding: 1em 0; }
+    .historias .cuento h2 {
+      font-weight: 400; }
+    .historias .cuento button {
+      margin-top: 1em; }
+  .historias .noticias-button {
+    text-align: center; }
+
+.cuentanos {
+  padding: 2em; }
+  .cuentanos .group-submit {
+    text-align: right; }
+    .cuentanos .group-submit input {
+      border: 2px solid #333333; }
+  .cuentanos .row-1, .cuentanos .mc-field-group {
+    display: -ms-flexbox;
+    display: flex; }
+  .cuentanos .mc-field-group {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    margin-right: 1em;
+    margin-bottom: 1em; }
+    .cuentanos .mc-field-group input {
+      border: 2px solid #333333;
+      padding-left: 0.5em;
+      height: 2em; }
+  .cuentanos .group-name {
+    width: 20%; }
+  .cuentanos .group-subject, .cuentanos .group-email {
+    width: 40%; }
+  .cuentanos .group-email, .cuentanos .group-message {
+    margin-right: 0; }
+
+.contacto {
+  padding: 1em;
+  text-align: center; }
+  .contacto .social-media {
+    padding: 1em;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center; }
+  .contacto .fa {
+    font-size: 2em;
+    margin: 1em 15%; }
+    .contacto .fa:hover {
+      color: #525252; }
+  .contacto .email a {
+    display: inline-block;
+    margin-bottom: 1em; }
+  .contacto .email h2 {
+    font-size: 1.6em;
+    letter-spacing: 0.7em; }
+
+.footer {
+  padding: 2em;
+  background: #333333;
+  color: white; }
+  .footer h1 {
+    color: white; }
+  .footer input:-webkit-autofill,
+  .footer input:-webkit-autofill:hover,
+  .footer input:-webkit-autofill:focus,
+  .footer input:-webkit-autofill:active {
+    -webkit-text-fill-color: white; }
+  .footer h1 {
+    font-size: 1.5em; }
+  .footer input {
+    background: transparent;
+    border: 1px solid white; }
+  .footer .form-display {
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%; }
+  .footer .mc-field-group {
+    width: 50%;
+    margin: 1em 0; }
+    .footer .mc-field-group input {
+      width: 100%;
+      height: 2em;
+      padding-left: 0.5em; }
+    .footer .mc-field-group label {
+      font-size: 1.2em;
+      font-weight: 200; }
+  .footer .group-text {
+    margin-right: 0.5em; }
+  .footer .subscribe-button {
+    width: 100%; }
+    .footer .subscribe-button:hover {
+      background: #858585; }
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome

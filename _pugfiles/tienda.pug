@@ -1,0 +1,19 @@
+mixin series-news(href, image, title)
+  .news-box
+    a(href=href)
+      .news-image
+        img.blackwhite-hover(src=image, title=title, alt=title)
+        .news-caption
+          h3= title
+
+.noticias.tienda
+  .title-content
+    h1 Noticias
+    hr
+
+  .noticias-articles
+    +series-news('noticias/noticia1.html','http://www.fillmurray.com/300/300', 'Policía Nacional cancela a un sargento porque firmó libro verde contra la impunidad')
+    +series-news('noticias/noticia2.html','http://www.fillmurray.com/300/300', 'Policía Nacional cancela a un sargento porque firmó libro verde contra la impunidad')
+    +series-news('noticias/noticia3.html','http://www.fillmurray.com/300/300', 'Policía Nacional cancela a un sargento porque firmó libro verde contra la impunidad')
+
+  a(target="_blank" href="https://www.instagram.com/"): button.ver-mas Ver Mas

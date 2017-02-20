@@ -1,0 +1,80 @@
+.header-position
+  // padding: $base-spacing
+  position: relative
+  background:
+    position: center top
+    size: cover
+
+  a, h1, h2, .fa
+    color: white
+
+  .nav, ul, .social-media
+    display: flex
+
+  .nav, .header-text
+    // margin: $base-spacing
+
+  .nav
+    position: fixed
+    left: 50%
+    transform: translate(-50%, 0)
+    width: 98%
+    margin-top: $base-spacing
+
+  .logo
+    width: 20%
+
+  ul
+    width: 70%
+    justify-content: flex-end
+
+    a:hover
+      color: black
+
+  li
+    margin-right: $base-spacing*4
+    font-size: $base-spacing*1.1
+
+  .active-nav
+    border-bottom: 2px solid white
+
+    &:hover
+      border-bottom: 2px solid black
+
+  .social-media
+    width: 10%
+    justify-content: flex-end
+    align-items: center
+
+  .fa
+    margin-right: $base-spacing*1.5
+
+    &:hover
+      color: black
+
+  .header-text
+    text-align: center
+    padding: 10% 0 7%
+
+    h1
+      font-size: $base-spacing*3
+      text-transform: uppercase
+      letter-spacing: $base-spacing*0.7
+      font-weight: 400
+
+    h2
+      margin: $base-spacing auto 0
+      width: 45%
+      font-size: $base-spacing*1.8
+      font-weight: 200
+
+.introduction
+  text-align: center
+  padding: $base-spacing*2 $base-spacing*2
+  background: $police-lightgrey
+
+  button
+    margin-top: $base-spacing*2
+
+  a
+    display: inline-block
