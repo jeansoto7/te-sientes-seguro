@@ -90,5 +90,14 @@
       li
         width: 33.3%
 
-        &:last-child
+        &:nth-child(4)
+          display: none
+
+@media #{$mc-small}
+  .twitter
+    #exampleProfile
+      li
+        width: 50%
+
+        &:nth-child(3)
           display: none
