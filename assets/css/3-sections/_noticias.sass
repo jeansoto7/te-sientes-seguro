@@ -25,6 +25,38 @@
   .news-box:last-child
     display: none
 
+  .pages-tienda
+    .news-box
+      border: 1px solid $police-darkgrey
+
+    .news-box:last-child
+      display: block
+
+.pages-noticias
+  background: $police-lightgrey
+  padding: $base-spacing*1 $base-spacing*2
+
+  h1
+    font-weight: 400
+
+  .news
+    display: flex
+
+  .secondary
+    margin-top: $base-spacing*2
+
+  .news-image, .content-noticias
+    width: 50%
+
+  .content-noticias
+    padding-left: $base-spacing*0.5
+
+  .news-image
+    padding-right: $base-spacing*0.5
+    img
+      width: 100%
+      height: auto
+
 @media #{$mc-xlarge}
   .noticias
     .news-box

@@ -222,16 +222,16 @@ body {
     body {
       font-size: 0.8em; } }
 
-h1, h2, h3, h4, h5, h6, p, a, hr, ul, li {
+h1, h2, h3, h4, h5, h6, p, a, hr, ul, ol, li {
   color: black;
   margin: 0;
   padding: 0;
   font-weight: 300; }
 
-a, ul, li {
+a, ul, li, ol {
   text-decoration: none; }
 
-ul, li {
+ol, ul, li {
   list-style: none; }
 
 a {
@@ -383,6 +383,11 @@ img {
   background-size: cover; }
   .header-position a, .header-position h1, .header-position h2, .header-position .fa {
     color: white; }
+  .header-position .pages-text h1, .header-position .pages-text h2 {
+    color: black; }
+  .header-position .pages-text h3 {
+    margin: 1em auto 0;
+    width: 90%; }
   .header-position .nav, .header-position ul, .header-position .social-media {
     display: -ms-flexbox;
     display: flex; }
@@ -444,6 +449,12 @@ img {
     margin-top: 2em; }
   .introduction a {
     display: inline-block; }
+  .introduction .objetivos {
+    margin-top: 2em; }
+    .introduction .objetivos li {
+      font-size: 1.2em; }
+    .introduction .objetivos a {
+      text-decoration: underline; }
 
 @media (max-width: 56.25em) {
   .header-position .header-text h1 {
@@ -517,6 +528,30 @@ img {
   background: #e8e8e8; }
   .tienda .news-box:last-child {
     display: none; }
+  .tienda .pages-tienda .news-box {
+    border: 1px solid #3b3736; }
+  .tienda .pages-tienda .news-box:last-child {
+    display: block; }
+
+.pages-noticias {
+  background: #e8e8e8;
+  padding: 1em 2em; }
+  .pages-noticias h1 {
+    font-weight: 400; }
+  .pages-noticias .news {
+    display: -ms-flexbox;
+    display: flex; }
+  .pages-noticias .secondary {
+    margin-top: 2em; }
+  .pages-noticias .news-image, .pages-noticias .content-noticias {
+    width: 50%; }
+  .pages-noticias .content-noticias {
+    padding-left: 0.5em; }
+  .pages-noticias .news-image {
+    padding-right: 0.5em; }
+    .pages-noticias .news-image img {
+      width: 100%;
+      height: auto; }
 
 @media (max-width: 43.75em) {
   .noticias .news-box {
@@ -653,6 +688,76 @@ img {
     margin-top: 1em; }
     .footer .subscribe-button:hover {
       background: #858585; }
+
+.twitter {
+  min-height: 20.75vw;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1em 2em; }
+  .twitter #exampleList {
+    display: none; }
+  .twitter #exampleProfile {
+    width: 100%; }
+    .twitter #exampleProfile p, .twitter #exampleProfile a {
+      font-size: 0.85em; }
+    .twitter #exampleProfile a, .twitter #exampleProfile a:visited {
+      color: #0074D9;
+      transition: all 0.3s ease-in-out; }
+    .twitter #exampleProfile a:hover {
+      border-bottom: 2px solid #3b3736; }
+    .twitter #exampleProfile ul {
+      display: -ms-flexbox;
+      display: flex; }
+    .twitter #exampleProfile li {
+      width: 25%;
+      padding: 0.25em;
+      position: relative; }
+    .twitter #exampleProfile ul li {
+      overflow: hidden;
+      border-right: 1px solid #ccc; }
+  .twitter .user, .twitter .tweet, .twitter .interact {
+    width: 100%;
+    margin-bottom: 0.8em; }
+  .twitter .user {
+    position: relative;
+    margin-bottom: 2em; }
+  .twitter .timePosted {
+    display: none; }
+  .twitter .interact a {
+    margin-right: 5%; }
+  .twitter .interact a:first-child {
+    display: none; }
+  .twitter .user a > span:nth-child(2) {
+    bottom: -2em;
+    left: 0;
+    border-bottom: 1px solid #3b3736;
+    position: absolute;
+    transition: all 0.3s ease-in-out; }
+    .twitter .user a > span:nth-child(2):hover {
+      border-bottom: 2px solid #3b3736; }
+  .twitter .user a > span:nth-child(3) {
+    display: none; }
+  .twitter .user img {
+    width: auto;
+    height: 100%; }
+  .twitter .media img {
+    width: 100%;
+    height: auto;
+    transition: all 0.3s ease-in-out; }
+    .twitter .media img:hover {
+      filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+      -webkit-filter: grayscale(100%);
+      -moz-filter: grayscale(100%);
+      -ms-filter: grayscale(100%);
+      filter: grayscale(100%);
+      -webkit-filter: gray;
+              filter: gray; }
+
+@media (max-width: 37.5em) {
+  .twitter #exampleProfile li {
+    width: 33.3%; }
+    .twitter #exampleProfile li:last-child {
+      display: none; } }
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome

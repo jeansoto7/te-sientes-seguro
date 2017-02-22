@@ -1,8 +1,3 @@
-mixin nav-content()
-  ul
-    li: a(href="#") About
-    //- li: a(href="#youtube") Yotube
-
 .header
   .header-position(style="background-image: url(assets/img/header-background.jpg)")
 
@@ -11,14 +6,14 @@ mixin nav-content()
         img(src="assets/img/logo.svg", title="¿Te Sientes Seguro?", alt="¿Te Sientes Seguro?")
       ul
         li: a.active-nav(href="/") Inicio
-        li: a(href="/") Noticias
-        li: a(href="/series") Historia
-        li: a(href="/collections") Tienda
+        li: a(href="/noticias") Noticias
+        li: a(href="/historias") Historias
+        li: a(href="/tienda") Tienda
 
       .social-media
-        a(target="_blank" href="https://www.instagram.com/").fa.fa-instagram
-        a(target="_blank" href="https://www.facebook.com/").fa.fa-facebook
-        a(target="_blank" href="https://www.twitter.com/").fa.fa-twitter
+        a(target="_blank" href="https://www.instagram.com/tesientessegurodo/").fa.fa-instagram
+        a(target="_blank" href="https://www.facebook.com/tesientesseguro/").fa.fa-facebook
+        a(target="_blank" href="https://www.twitter.com/tesientesseguro/").fa.fa-twitter
 
     .header-text
       h1 ¿Te Sientes Seguro?

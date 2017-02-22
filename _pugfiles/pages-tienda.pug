@@ -1,0 +1,22 @@
+mixin series-news(href, image, title)
+  .news-box
+    a(href=href)
+      .news-image
+        img.blackwhite-hover(src=image, title=title, alt=title)
+        .news-caption
+          h3= title
+
+.noticias.tienda
+  .noticias-articles.pages-tienda
+    +series-news('noticias/noticia1.html','http://www.fillmurray.com/400/400', 'T-Shirt')
+    +series-news('noticias/noticia2.html','http://www.fillmurray.com/400/400', 'T-Shirt')
+    +series-news('noticias/noticia3.html','http://www.fillmurray.com/400/400', 'T-Shirt')
+    +series-news('noticias/noticia3.html','http://www.fillmurray.com/400/400', 'T-Shirt')
+    +series-news('noticias/noticia3.html','http://www.fillmurray.com/400/400', 'T-Shirt')
+    +series-news('noticias/noticia3.html','http://www.fillmurray.com/400/400', 'T-Shirt')
+    +series-news('noticias/noticia3.html','http://www.fillmurray.com/400/400', 'T-Shirt')
+    +series-news('noticias/noticia3.html','http://www.fillmurray.com/400/400', 'T-Shirt')
+    +series-news('noticias/noticia3.html','http://www.fillmurray.com/400/400', 'T-Shirt')
+    +series-news('noticias/noticia3.html','http://www.fillmurray.com/400/400', 'T-Shirt')
+    +series-news('noticias/noticia3.html','http://www.fillmurray.com/400/400', 'T-Shirt')
+    +series-news('noticias/noticia3.html','http://www.fillmurray.com/400/400', 'T-Shirt')
