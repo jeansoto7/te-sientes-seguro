@@ -1,22 +1,21 @@
-mixin series-news(href, image, title)
+mixin series-news(image, title)
   .news-box
-    a(href=href)
-      .news-image
-        img.blackwhite-hover(src=image, title=title, alt=title)
-        .news-caption
-          h3= title
+    .news-image
+      img.blackwhite-hover(src=image, title=title, alt=title)
+      .news-caption
+        h3= title
 
 .noticias.tienda
   .noticias-articles.pages-tienda
-    +series-news('noticias/noticia1.html','http://www.fillmurray.com/400/400', 'T-Shirt')
-    +series-news('noticias/noticia2.html','http://www.fillmurray.com/400/400', 'T-Shirt')
-    +series-news('noticias/noticia3.html','http://www.fillmurray.com/400/400', 'T-Shirt')
-    +series-news('noticias/noticia3.html','http://www.fillmurray.com/400/400', 'T-Shirt')
-    +series-news('noticias/noticia3.html','http://www.fillmurray.com/400/400', 'T-Shirt')
-    +series-news('noticias/noticia3.html','http://www.fillmurray.com/400/400', 'T-Shirt')
-    +series-news('noticias/noticia3.html','http://www.fillmurray.com/400/400', 'T-Shirt')
-    +series-news('noticias/noticia3.html','http://www.fillmurray.com/400/400', 'T-Shirt')
-    +series-news('noticias/noticia3.html','http://www.fillmurray.com/400/400', 'T-Shirt')
-    +series-news('noticias/noticia3.html','http://www.fillmurray.com/400/400', 'T-Shirt')
-    +series-news('noticias/noticia3.html','http://www.fillmurray.com/400/400', 'T-Shirt')
-    +series-news('noticias/noticia3.html','http://www.fillmurray.com/400/400', 'T-Shirt')
+    +series-news('../assets/img/tienda/design.jpg', 'T-Shirts')
+    +series-news('../assets/img/tienda/design1.jpg', 'T-Shirts')
+    +series-news('../assets/img/tienda/design2.jpg', 'T-Shirts')
+    +series-news('../assets/img/tienda/design3.jpg', 'T-Shirts')
+    +series-news('../assets/img/tienda/design4.jpg', 'T-Shirts')
+    +series-news('../assets/img/tienda/design5.jpg', 'T-Shirts')
+    +series-news('../assets/img/tienda/stickers1.jpg', 'Stickers')
+    +series-news('../assets/img/tienda/stickers2.jpg', 'Stickers')
+    +series-news('../assets/img/tienda/stickers3.jpg', 'Stickers')
+    +series-news('../assets/img/tienda/stickers4.jpg', 'Stickers')
+    +series-news('../assets/img/tienda/stickers5.jpg', 'Stickers')
+    +series-news('../assets/img/tienda/stickers6.jpg', 'Stickers')
