@@ -775,13 +775,17 @@ img {
   .twitter #exampleProfile li {
     width: 33.3%; }
     .twitter #exampleProfile li:nth-child(4) {
-      display: none; } }
+      display: none; }
+  .twitter #exampleProfile ul li:nth-child(3) {
+    border-right: none; } }
 
 @media (max-width: 28.125em) {
   .twitter #exampleProfile li {
     width: 50%; }
     .twitter #exampleProfile li:nth-child(3) {
-      display: none; } }
+      display: none; }
+  .twitter #exampleProfile ul li:nth-child(2) {
+    border-right: none; } }
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
