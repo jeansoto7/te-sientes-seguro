@@ -11,15 +11,20 @@
   .nav, ul, .social-media
     display: flex
 
-  .nav, .header-text
+  // .nav, .header-text
     // margin: $base-spacing
 
   .nav
     position: fixed
     left: 50%
     transform: translate(-50%, 0)
-    width: 98%
-    margin-top: $base-spacing
+    width: 100%
+    // margin-top: $base-spacing
+    padding: $base-spacing*0.5 $base-spacing*2
+    // border: 2px solid red
+    // top: 0
+    background: fade-out(#737372, 0.4)
+    z-index: 100
 
   .logo
     width: 20%
@@ -47,10 +52,13 @@
     align-items: center
 
   .fa
-    margin-right: $base-spacing*1.5
+    margin-right: $base-spacing*2
 
     &:hover
       color: black
+
+    &:last-child
+      margin-right: 0
 
   .header-text
     text-align: center
@@ -78,3 +86,66 @@
 
   a
     display: inline-block
+
+@media #{$mc-xxxxlarge}
+  .header-position
+    .header-text
+      h1
+        font-size: $base-spacing*2.4
+        letter-spacing: $base-spacing*0.5
+
+      h2
+        font-size: $base-spacing*1.6
+        width: 70%
+
+@media #{$mc-xxlarge}
+  .header-position
+    li
+      margin-right: $base-spacing*2
+
+    .fa
+      margin-right: $base-spacing
+
+    .header-text
+      h1
+        font-size: $base-spacing*2
+
+      h2
+        font-size: $base-spacing*1.4
+        width: 70%
+
+@media #{$mc-xmedium}
+  .header-position
+    .nav
+      height: $base-spacing*3
+      align-items: center
+
+    li, .fa
+      margin-right: 0
+
+    ul
+      width: 80%
+      justify-content: space-between
+      margin-right: $base-spacing*2
+
+    .social-media
+      width: 20%
+      justify-content: space-around
+
+    .header-text
+      padding: $base-spacing*7 0 $base-spacing*4
+
+      h1
+        font-size: $base-spacing*1.8
+        letter-spacing: $base-spacing*0.4
+
+      h2
+        font-size: $base-spacing*1.2
+
+    .logo
+      display: none
+
+@media #{$mc-jsmall}
+  .header-position
+    ul
+      margin-right: $base-spacing*0.5

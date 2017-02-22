@@ -12,7 +12,7 @@
 
   .mc-field-group
     flex-direction: column
-    margin-right: $base-spacing
+    margin-right: $base-spacing*0.5
     margin-bottom: $base-spacing
 
     input
@@ -29,7 +29,14 @@
   .group-email, .group-message
     margin-right: 0
 
-  // .group-message
-  //   input
-      // border: 2px solid red
-      // height: $base-spacing*5
+@media #{$mc-medium}
+  .cuentanos
+    text-align: center
+    .row-1
+      flex-wrap: wrap
+
+    .mc-field-group
+      margin-right: 0
+
+    .group-name, .group-subject, .group-email
+      width: 100%

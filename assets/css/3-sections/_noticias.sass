@@ -10,8 +10,7 @@
 
   .news-box
     width: 33.3%
-    padding: $base-spacing*0.5 $base-spacing*2
-    overflow: hidden
+    padding: $base-spacing*0.5 $base-spacing*1
 
     img
       width: 100%
@@ -22,3 +21,20 @@
 
 .tienda
   background: $police-lightgrey
+
+  .news-box:last-child
+    display: none
+
+@media #{$mc-xlarge}
+  .noticias
+    .news-box
+      width: 50%
+
+  .tienda
+    .news-box:last-child
+      display: block
+
+@media #{$mc-jsmall}
+  .noticias
+    .news-box
+      width: 100%
